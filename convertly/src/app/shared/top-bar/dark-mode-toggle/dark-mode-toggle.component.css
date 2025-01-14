@@ -1,0 +1,15 @@
+.dark-mode-icon {
+    color: white;
+}
+
+.light-mode-icon {
+    color: black;
+}
+
+.dark-mode-toggle {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

@@ -1,1 +1,7 @@
-<p>top-bar works!</p>
+<div class="top-bar">
+    <img src="../../../assets/images/Convertly-logo-clear-bg.png" alt="Convertly logo" class="top-bar-logo">
+    <div class="button-container">
+        <app-dark-mode-toggle (darkModeSwitched)="handleDarkModeChange($event)"></app-dark-mode-toggle>
+        <app-social-media-button></app-social-media-button>
+    </div>
+</div>

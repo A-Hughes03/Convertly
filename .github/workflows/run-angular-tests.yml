@@ -28,13 +28,14 @@ jobs:
       run: npm install -g @angular/cli
 
     # Install dependencies
-    - name: Install dependencies
+    - name: Install dependencies and Angular CLI
       run: |
         cd convertly
+        npm install -g @angular/cli
         npm install
 
     # Run tests
     - name: Run tests
       run: |
         cd convertly
-        ng test -- --watch=false
+        npm run test

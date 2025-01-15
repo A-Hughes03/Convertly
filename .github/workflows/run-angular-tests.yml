@@ -17,9 +17,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20'
-      - name: Change to convertly frontend directory
-        run: cd convertly
       - name: Install dependencies
         run: npm install
+        working-directory: convertly
       - name: Run tests
         run: ng test --watch=false
+        working-directory: convertly

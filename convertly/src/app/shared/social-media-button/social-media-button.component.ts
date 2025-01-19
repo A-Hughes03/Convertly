@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-social-media-button',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./social-media-button.component.css']
 })
 export class SocialMediaButtonComponent {
+  @Input() isDarkMode: boolean = true;
 
+  navigateToSocialMedia() {
+    window.open('https://github.com/A-Hughes03/Convertly')
+  }
+
+  get socialMediaIcon(): string {
+    return this.isDarkMode ? 'dark-mode-github-clear-logo' : 'github-logo-clear';
+  }
 }

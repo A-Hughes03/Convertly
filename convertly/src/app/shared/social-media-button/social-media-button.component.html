@@ -1,1 +1,4 @@
-<button class="social-media-button">yo</button>
+<button class="social-media-button" [ngClass]="{ 'dark-mode': isDarkMode, 'light-mode' : !isDarkMode }" (click)="navigateToSocialMedia()">
+    GitHub Repo
+    <img [src]="'../../assets/images/' + socialMediaIcon + '.png'" alt="Githb Logo" class="social-media-icon">
+</button>

@@ -15,7 +15,13 @@ describe('HeaderComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should render header text', () => {
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('.header').textContent).toContain('File Conversion Made Simple - Convertly');
+  });
+
+  it('should render subheader text', () => {
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('.subheader').textContent).toContain('Seamlessly transform your files into the formates you need. No hassle, no limits.');
   });
 });

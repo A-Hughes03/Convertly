@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent {
+  isDarkMode: boolean = true;
+
   handleDarkModeChange(isDarkMode: boolean): void {
+    this.isDarkMode = isDarkMode;
     console.log('Dark mode:', isDarkMode);
   }
 }

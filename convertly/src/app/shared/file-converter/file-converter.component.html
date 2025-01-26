@@ -1,0 +1,17 @@
+<div>
+<div class="file-converter-container">
+    <p class="file-name">{{fileName}}</p>
+    <div class="file-type-selection-container">
+        <p class="file-type-caption">Convert to</p>
+        <mat-form-field class="file-type-form-field">
+            <mat-select matNativeControl [(ngModel)]="selectedValue" name="fileType" class="file-type-selection">
+                <mat-option *ngFor="let imageType of imageTypes" [value]="imageType.value">
+                    {{ imageType.viewValue }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <input type="file" #fileInput (change)="onFileSelected($event)" [accept]="acceptedFileTypes" style="display: none;">
+    </div>
+</div>
+<button class="submit-button" [disabled]="!isFileSelected">Convert File</button>
+</div>

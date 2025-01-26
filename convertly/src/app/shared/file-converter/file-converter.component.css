@@ -1,0 +1,45 @@
+.file-converter-container {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    border: 2px solid #D9D9D9;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 56.25em;
+    height: 3.25em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3%;
+}
+
+.file-converter-container:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.file-type-selection-container {
+    width: 16.06em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+mat-form-field, mat-select {
+    width: 112px;
+    height: 30px;
+    border: 2px solid #D9D9D9;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.file-name {
+    color: white;
+}
+.file-type-caption {
+    color: white;
+}
+
+p {
+    margin: 0;
+}
